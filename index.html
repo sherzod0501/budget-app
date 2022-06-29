@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <!-- Обязательные метатеги -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Day9</title>
+</head>
+
+<body>
+    <div class="container ">
+        <h1>BUDGET APP</h1>
+        <main class="main d-flex">
+            <div class="wrapper d-flex  flex-column col-5  row me-5 ">
+                <form class="form-top mb-3 form-control border border-success border-3 p-4 mt-3" action="">
+                    <h4 class="head">please enter your budget </h4>
+                    <input class="budget-input form-control border border-success border-1" type="number" required>
+                    <button class="budget-btn btn btn-outline-success mt-3">Calculate</button>
+                </form>
+
+                <form class="form-bottom mt-5 border border-danger border-3 p-4" action="">
+                    <h4 class="head">please enter your Expense </h4>
+                    <input class="expense-input form-control border border-danger border-1 mb-3" type="text" required>
+                    <h4 class="head">please enter Expense amount</h4>
+                    <input class="expense-input-number form-control border border-danger border-1 mb-3" type="number"
+                        required>
+                    <button class="expense-btn btn  btn-outline-danger">Add Expense</button>
+                </form>
+            </div>
+
+            <div class="col-6">
+                <div class="wrapper-right d-flex justify-content-between align-content-center flex-wrap ">
+                    <div class="div">
+                        <h3 class="head">BUDGET</h3>
+                        <!-- <span class="icon-span mt-3">*</span> -->
+                        <img class="img ms-4" src="./img/budget.png" width="50" height="50" alt="icon">
+                        <p class="d-flex justify-content-center h2 mt-3" style="color: green">$ <span
+                                class="Budget-span">0</span></p>
+                    </div>
+                    <div class="div">
+                        <h3 class="head">EXPENSES</h3>
+                        <!-- <span class="icon-span mt-3"></span> -->
+                        <img class="img ms-4" src="./img/card_115200.png" width="50" height="50" alt="icon">
+                        <p class="d-flex justify-content-center h2 mt-3" mt-5 style="color: red">$ <span
+                                class="Expense-span">0</span></p>
+                    </div>
+                    <div class="div">
+                        <h3 class="head">BALANCE</h3>
+                        <!-- <span class="icon-span mt-3">*</span> -->
+                        <img class="img ms-4" src="./img/dollar-symbol.png" width="50" height="50" alt="icon">
+                        <p class="d-flex justify-content-center h2 mt-3" mt-5 style="color: green">$ <span
+                                class="Balance-span"> 0</span></p>
+                    </div>
+                </div>
+                <div class="div-bottom d-flex gap-5 mt-4">
+                    <div class="h4 me-4">expense title</div>
+                    <div class="h4 ms-5">expense value</div>
+                </div>
+                <ul class="list"></ul>
+            </div>
+        </main>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="./JS/index.js"></script>
+</body>
+
+</html>
